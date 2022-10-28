@@ -1,0 +1,130 @@
+nav {
+    position: fixed;
+    padding: 1.2rem .2rem;
+    z-index: 20;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+nav a{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.755);
+    padding: .7rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.scroll {
+    /* transition: all 0.3s ease-in-out; */
+    background-color: rgba(219, 219, 219, 0.55);
+}
+
+.scroll a{
+    color:black;
+}
+
+.scroll a:hover{
+    color:rgb(93, 93, 93);
+}
+
+.devgav {
+    float: left;
+    margin-top: -12px;
+    font-size: 21px;
+    color: white;
+    font-weight: 200;
+}
+
+.hamburger {
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.links {
+    float: left;
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+
+@media screen and (max-width: 1024px){
+    .hamburger {
+        position: absolute;
+        right: 1%;
+        top: 25%;
+        display: block;
+        padding: 0 1rem;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .links {
+        margin-left: -100%;
+        padding: .3rem 1rem;
+        flex-direction: column;
+    }
+
+    .links.active{
+        margin-left: -16%;
+        margin-top: 2.5%;
+        transition: all .3s ease-in-out;
+        display: flex;
+    }
+
+    .hamburger.active {
+        top: 8.5%;
+    }
+
+    .scroll div .bar{
+        background-color: rgba(0, 0, 0, 0.722);
+    }
+
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+
+@media screen and (max-width: 600px){
+    .links.active{
+        margin-left: -28.5%;
+        margin-top: 2.9%;
+        transition: all .3s ease-in-out;
+        display: flex;
+    }
+}
+
+/*============== Media Query for Mobile Devices ============== */
+@media (max-width: 480px) {
+    .links{
+      margin-left: -1000%;
+    }
+
+    .links.active{
+        margin-left: -35%;
+        margin-top: 5%;
+      }
+
+  }

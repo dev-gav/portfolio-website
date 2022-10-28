@@ -1,0 +1,75 @@
+.aboutme {
+    position: relative;
+    background-color: var(--color-lightgrey);
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+}
+
+.me {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    float: left;
+    margin-left: 14%;
+    border: .5px solid var(--color-black);
+}
+
+.aboutme h1 {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+
+.aboutme h1, h4 {
+    max-width: 45%;
+    margin-left: 43%;
+    line-height: 1.6;
+    
+}
+
+.aboutme h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+
+@media screen and (max-width: 1024px){
+
+    .me {
+        display: none;
+        /* Maybe change to small and on top of about me */
+    }
+    .aboutme h1, h4 {
+        text-align: center;
+        margin: auto;
+        max-width: 70%;
+        line-height: 1.6;
+        
+    }
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+
+@media screen and (max-width: 600px){
+    .me {
+        display: none;
+        /* Maybe change to small and on top of about me */
+    }
+    .aboutme h1, h4 {
+        text-align: center;
+        margin: auto;
+        max-width: 70%;
+        line-height: 1.6;
+        
+    }
+}
+
+/*============== Media Query for Mobile Devices ============== */
+@media (max-width: 480px) {
+  .aboutme h1{
+    font-size: 35px;
+  }
+}

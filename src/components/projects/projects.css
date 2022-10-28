@@ -1,0 +1,94 @@
+.featured-projects {
+    position: relative;
+    background: var(--color-lightgrey);
+}
+
+.featured-projects > h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.projects {
+    width: 70%;
+    margin-left: 15%;
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project {
+    padding: 2em;
+    border-radius: .3em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background: var(--color-white);
+    line-height: 1.5;
+}
+
+.project p{
+    font-weight: 100;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* ====== BUTTON ====== */
+
+.project a {
+    position: relative;
+    top: 13px;
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(87, 87, 87);
+}
+
+.btn {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209,213,219);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn:hover {
+    background-color: rgb(249,250,251);
+  }
+  
+  .btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  .btn:focus-visible {
+    box-shadow: none;
+  }
+    
+  .btn:active {
+      background-color: #F0F0F1;
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+      color: rgba(0, 0, 0, 0.65);
+      transform: translateY(0);
+  }
+
+/*============== Media Query for Mobile Devices ============== */
+@media (max-width: 480px) {
+    .projects{
+      margin-left: 6%;
+    }
+  }

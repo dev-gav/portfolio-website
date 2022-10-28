@@ -1,0 +1,79 @@
+.skills {
+    background: var(--color-offwhite);
+    padding: 5rem 2rem;
+
+    display:grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 50px));
+
+    margin-left: 12.5%;
+}
+
+.skill {
+    width: 410px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.skill > h4 { 
+    margin-left: 27%;
+    margin-top: 5%;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.image-grid {
+    margin-left: 17%;
+    margin-top: -5%;
+    --gap: 50px;
+    --num-cols: 2;
+    --row-height: 30px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 40px);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid > img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+
+@media screen and (max-width: 1024px){
+    .skills {
+        margin-left: 5%;
+        grid-gap: 3em;
+    }
+
+    .skill h4 {
+        margin-left: 15%;
+    }
+}
+
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+
+@media screen and (max-width: 600px){
+    .skills {
+        margin-left: -.4%;
+    }
+
+    .skill > h4 { 
+        margin-left: 15%;
+    }
+}
+
+/*============== Media Query for Mobile Devices ============== */
+@media (max-width: 480px) {
+    .skills{
+      margin-left: -14.5%;
+    }
+  }

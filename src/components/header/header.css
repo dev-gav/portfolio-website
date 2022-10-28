@@ -1,0 +1,130 @@
+header {
+    position: relative;
+    height: 100vh;
+    vertical-align: middle;
+    padding-bottom: 7rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header__container {
+    position: absolute;
+    color: var(--color-white);
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__container h1 {
+    font-size: 110px;
+}
+
+.header__container h2 {
+    font-size: 21px;
+}
+
+.scrollto {
+    font-size: 60px;
+    top: 250px;
+    position: relative;
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.scrollto:hover {
+    color: rgb(66, 66, 66);
+    animation: bounce__hover 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce__hover {
+    10% {top: 252px; color: rgba(66, 66, 66, 0.813)}
+    50% {top: 255px; color: rgba(66, 66, 66, 0.563)}
+}
+
+@keyframes bounce {
+    10% {top: 252px; color: rgba(255, 255, 255, 0.813)}
+    50% {top: 255px; color: rgba(255, 255, 255, 0.563)}
+}
+
+/* ==== HEADER SOCIALS ==== */
+
+.cta {
+    padding-top: .5rem;
+    font-size: 45px;
+    color: white;   
+}
+
+.socials {
+    color: white;
+    padding: 0 4px;
+}
+
+.socials:hover {
+    color: rgba(120, 120, 120, 0.8);
+    transition: var(--transition);
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+
+@media screen and (max-width: 600px){
+    .scrollto {
+        font-size: 60px;
+        top: 180px;
+        position: relative;
+        animation: bounce 1s;
+        animation-iteration-count: infinite;
+        color: rgb(255, 255, 255);
+    }
+
+    @keyframes bounce__hover {
+        10% {top: 182px; color: rgba(66, 66, 66, 0.813)}
+        50% {top: 185px; color: rgba(66, 66, 66, 0.563)}
+    }
+    
+    @keyframes bounce {
+        10% {top: 182px; color: rgba(255, 255, 255, 0.813)}
+        50% {top: 185px; color: rgba(255, 255, 255, 0.563)}
+    }
+
+    .header__container h1 {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 800px){ 
+    .scrollto {
+        top: 150px;
+    }
+
+    @keyframes bounce__hover {
+        10% {top: 152px; color: rgba(66, 66, 66, 0.813)}
+        50% {top: 155px; color: rgba(66, 66, 66, 0.563)}
+    }
+    
+    @keyframes bounce {
+        10% {top: 152px; color: rgba(255, 255, 255, 0.813)}
+        50% {top: 155px; color: rgba(255, 255, 255, 0.563)}
+    }
+}
+
+/*============== Media Query for Mobile Devices ============== */
+@media (max-width: 480px) {
+    .scrollto {
+        top: 120px;
+    }
+
+    @keyframes bounce__hover {
+        10% {top: 122px; color: rgba(66, 66, 66, 0.813)}
+        50% {top: 125px; color: rgba(66, 66, 66, 0.563)}
+    }
+    
+    @keyframes bounce {
+        10% {top: 122px; color: rgba(255, 255, 255, 0.813)}
+        50% {top: 125px; color: rgba(255, 255, 255, 0.563)}
+    }
+
+  }

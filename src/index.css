@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-black: #000000;
+    --color-white: #fff;
+    --color-offwhite: #fcfcfc;
+    --color-lightgrey: #f0f0f0;
+
+    --transition: all 400ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-offwhite);
+    line-height: 1.1;
+}
+
+/* ================ GENERAL STYLES ================ */
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+
+@media screen and (max-width: 1024px){
+
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+
+@media screen and (max-width: 600px){
+    
+}
