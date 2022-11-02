@@ -1,26 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb5bf935.css",
-    "main.js": "/static/js/main.9f587e45.js",
+    "main.css": "/static/css/main.8d6d2cfc.css",
+    "main.js": "/static/js/main.35f1623d.js",
     "static/media/me.png": "/static/media/me.d3dd692eebaa12d000c1.png",
-    "static/media/c.png": "/static/media/c.2f704f908e45186c4133.png",
     "static/media/Gavin Barber Resume.pdf": "/static/media/Gavin Barber Resume.6c58e738c578b21aa5ae.pdf",
-    "static/media/react.png": "/static/media/react.3f281ff9d09b0a87bad3.png",
-    "static/media/mysql.png": "/static/media/mysql.6d57f67bb9f657da5a62.png",
-    "static/media/mongodb.png": "/static/media/mongodb.a8889d623357ad8ce30e.png",
-    "static/media/figma.png": "/static/media/figma.ce27ece000d4cbf4085d.png",
-    "static/media/express.png": "/static/media/express.39a0f4c3d981885c64f8.png",
-    "static/media/unity.png": "/static/media/unity.4bc2cc6a088abd2b2856.png",
-    "static/media/python.png": "/static/media/python.14be2794cffcc027e338.png",
-    "static/media/java.png": "/static/media/java.bb7d79018b1646455f87.png",
-    "static/media/github.png": "/static/media/github.3da0486894b515a5d7d8.png",
-    "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/index.html",
-    "main.bb5bf935.css.map": "/static/css/main.bb5bf935.css.map",
-    "main.9f587e45.js.map": "/static/js/main.9f587e45.js.map"
+    "main.8d6d2cfc.css.map": "/static/css/main.8d6d2cfc.css.map",
+    "main.35f1623d.js.map": "/static/js/main.35f1623d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb5bf935.css",
-    "static/js/main.9f587e45.js"
+    "static/css/main.8d6d2cfc.css",
+    "static/js/main.35f1623d.js"
   ]
 }
