@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f893be52.css",
-    "main.js": "/static/js/main.c4d91dad.js",
+    "main.css": "/static/css/main.517b71ac.css",
+    "main.js": "/static/js/main.bc3b6151.js",
     "static/media/me.png": "/static/media/me.d3dd692eebaa12d000c1.png",
     "static/media/Gavin Barber Resume.pdf": "/static/media/Gavin Barber Resume.6c58e738c578b21aa5ae.pdf",
     "index.html": "/index.html",
-    "main.f893be52.css.map": "/static/css/main.f893be52.css.map",
-    "main.c4d91dad.js.map": "/static/js/main.c4d91dad.js.map"
+    "main.517b71ac.css.map": "/static/css/main.517b71ac.css.map",
+    "main.bc3b6151.js.map": "/static/js/main.bc3b6151.js.map"
   },
   "entrypoints": [
-    "static/css/main.f893be52.css",
-    "static/js/main.c4d91dad.js"
+    "static/css/main.517b71ac.css",
+    "static/js/main.bc3b6151.js"
   ]
 }
