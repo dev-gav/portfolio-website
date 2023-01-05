@@ -17,7 +17,7 @@ const Projects = () => {
 
         <div className='project'>
           <h3>Portfolio Website</h3>
-          <p>Built a personal portfolio website using ReactJS and tsParticles to showcase my web presence, projects, and story in a visually appealing format.</p>
+          <p>Built a personal portfolio website using ReactJS and tsParticles to showcase my web presence, projects, and skills in a visually appealing format.</p>
           <a href='https://github.com/dev-gav/Portfolio-Website' className='btn'><AiFillGithub size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> Repo</a>
         </div>
 

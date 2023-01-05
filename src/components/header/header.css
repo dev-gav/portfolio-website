@@ -1,8 +1,8 @@
 header {
+    background: rgb(25,40,65);
+    background: linear-gradient(45deg, rgba(25, 40, 65,.25) 0%, rgba(69,89,122,.25) 100%);   
     position: relative;
     height: 100vh;
-    vertical-align: middle;
-    padding-bottom: 7rem;
     overflow: hidden;
     text-align: center;
 }
@@ -10,25 +10,30 @@ header {
 .header__container {
     position: absolute;
     color: var(--color-white);
-    text-align: center;
-    top: 40%;
+    top: 50%;
     width: 100%;
-    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .header__container h1 {
-    font-size: 110px;
+    font-size: 130px;
+    font-weight: 400;
 }
 
 .header__container h2 {
-    font-size: 21px;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .scrollto {
     font-size: 60px;
-    top: 250px;
-    position: relative;
-    animation: bounce 1s;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    animation: bounce 1.2s;
     animation-iteration-count: infinite;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -36,18 +41,18 @@ header {
 
 .scrollto:hover {
     color: rgb(66, 66, 66);
-    animation: bounce__hover 1s;
+    animation: bounce__hover 1.2s;
     animation-iteration-count: infinite;
 }
 
 @keyframes bounce__hover {
-    10% {top: 252px; color: rgba(66, 66, 66, 0.813)}
-    50% {top: 255px; color: rgba(66, 66, 66, 0.563)}
+    10% {bottom: 20px; color: rgba(120, 120, 120, 1);}
+    50% {bottom: 16px; color: rgba(120, 120, 120, 1);}
 }
 
 @keyframes bounce {
-    10% {top: 252px; color: rgba(255, 255, 255, 0.813)}
-    50% {top: 255px; color: rgba(255, 255, 255, 0.563)}
+    10% {bottom: 20px; color: rgba(255, 255, 255, 1)}
+    50% {bottom: 16px; color: rgba(255, 255, 255, .6)}
 }
 
 /* ==== HEADER SOCIALS ==== */
@@ -68,63 +73,51 @@ header {
     transition: var(--transition);
 }
 
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+
+@media screen and (max-width: 1024px){
+    .header__container h1 {
+        font-size: 115px;
+        font-weight: 500;
+    }
+    .header__container h2 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .cta {
+        font-size: 43px;
+    }
+}
+
 /* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
 
 @media screen and (max-width: 600px){
-    .scrollto {
-        font-size: 60px;
-        top: 180px;
-        position: relative;
-        animation: bounce 1s;
-        animation-iteration-count: infinite;
-        color: rgb(255, 255, 255);
-    }
-
-    @keyframes bounce__hover {
-        10% {top: 182px; color: rgba(66, 66, 66, 0.813)}
-        50% {top: 185px; color: rgba(66, 66, 66, 0.563)}
-    }
-    
-    @keyframes bounce {
-        10% {top: 182px; color: rgba(255, 255, 255, 0.813)}
-        50% {top: 185px; color: rgba(255, 255, 255, 0.563)}
-    }
 
     .header__container h1 {
-        font-size: 90px;
+        font-size: 60px;
+        font-weight: 500;
     }
-}
+    .header__container h2 {
+        font-size: 14px;
+        font-weight: 400;
+    }
 
-@media screen and (max-width: 800px){ 
-    .scrollto {
-        top: 150px;
+    .cta {
+        font-size: 40px;
     }
 
-    @keyframes bounce__hover {
-        10% {top: 152px; color: rgba(66, 66, 66, 0.813)}
-        50% {top: 155px; color: rgba(66, 66, 66, 0.563)}
-    }
-    
-    @keyframes bounce {
-        10% {top: 152px; color: rgba(255, 255, 255, 0.813)}
-        50% {top: 155px; color: rgba(255, 255, 255, 0.563)}
-    }
-}
-
-/*============== Media Query for Mobile Devices ============== */
-@media (max-width: 480px) {
-    .scrollto {
-        top: 120px;
+    .scrollto{
+        bottom: 90px;
     }
 
     @keyframes bounce__hover {
-        10% {top: 122px; color: rgba(66, 66, 66, 0.813)}
-        50% {top: 125px; color: rgba(66, 66, 66, 0.563)}
+        10% {bottom: 90px; color: rgba(120, 120, 120, 1);}
+        50% {bottom: 84px; color: rgba(120, 120, 120, 1);}
     }
     
     @keyframes bounce {
-        10% {top: 122px; color: rgba(255, 255, 255, 0.813)}
-        50% {top: 125px; color: rgba(255, 255, 255, 0.563)}
+        10% {bottom: 90px; color: rgba(255, 255, 255, 1)}
+        50% {bottom: 84px; color: rgba(255, 255, 255, .6)}
     }
-
-  }
+}

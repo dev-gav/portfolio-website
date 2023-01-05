@@ -13,11 +13,12 @@
 
 .projects {
     width: 70%;
-    margin-left: 15%;
     padding: 3em;
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: auto;
+    justify-content: center;
 }
 
 .project {
@@ -26,12 +27,29 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     background: var(--color-white);
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.project:hover{
+  transform: translateY(-5px);
+}
+
+.project h3{
+  font-weight: 500;
 }
 
 .project p{
-    font-weight: 100;
+    font-weight: 200;
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+.project .btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 /* ====== BUTTON ====== */
@@ -41,7 +59,7 @@
     top: 13px;
     font-weight: 200;
     font-size: 15px;
-    color: rgb(87, 87, 87);
+    color: rgb(110, 117, 124);
 }
 
 .btn {
@@ -66,7 +84,9 @@
   }
   
   .btn:hover {
-    background-color: rgb(249,250,251);
+    transition: all .3s ease-in-out;
+    background-color: rgb(110, 117, 124);
+    color: white;
   }
   
   .btn:focus {
@@ -86,9 +106,10 @@
       transform: translateY(0);
   }
 
-/*============== Media Query for Mobile Devices ============== */
-@media (max-width: 480px) {
-    .projects{
-      margin-left: 6%;
-    }
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+
+@media screen and (max-width: 600px){
+  .featured-projects h1{
+    font-size: 37px;
   }
+}

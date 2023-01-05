@@ -1,46 +1,48 @@
-nav {
-    position: fixed;
-    padding: 1.2rem .2rem;
-    z-index: 20;
+.navbar {
+    z-index: 999;
     width: 100%;
-    padding-bottom: 10px;
+    position: fixed;
 }
 
-nav a{
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.755);
-    padding: .7rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
     font-weight: 100;
-    cursor: pointer;
-}
-
-nav a:hover{
-    color: rgb(255, 255, 255);
-}
-
-.scroll {
-    /* transition: all 0.3s ease-in-out; */
-    background-color: rgba(219, 219, 219, 0.55);
-}
-
-.scroll a{
-    color:black;
-}
-
-.scroll a:hover{
-    color:rgb(93, 93, 93);
 }
 
 .devgav {
-    float: left;
-    margin-top: -12px;
-    font-size: 21px;
-    color: white;
     font-weight: 200;
+    padding-right: 1rem;
+}
+
+.nav-link{
+    transition: 0.3s ease;
+}
+
+.nav-link:hover{
+    color: rgba(255, 255, 255, 1);
 }
 
 .hamburger {
-    float: right;
     display: none;
     cursor: pointer;
 }
@@ -52,22 +54,40 @@ nav a:hover{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-.links {
-    float: left;
+/* ============== SCROLL STYLES ============== */
+
+.scroll {
+    background-color: rgba(219, 219, 219, 0.55);
+}
+
+.scroll a{
+    color: black;
+}
+
+.scroll a:hover{
+    color:rgb(93, 93, 93);
+}
+
+.scroll .bar {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
 
 @media screen and (max-width: 1024px){
-    .hamburger {
-        position: absolute;
-        right: 1%;
-        top: 25%;
+    .navbar {
+        width: 100%;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .hamburger{
         display: block;
-        padding: 0 1rem;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -82,49 +102,28 @@ nav a:hover{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .links {
-        margin-left: -100%;
-        padding: .3rem 1rem;
-        flex-direction: column;
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 61px;
+        /* gap: 0; */
+        flex-direction:column;
+        width: 100%;
+        align-items: flex-start;
+        transition: 0.3s;
+        padding-bottom: 1rem;
     }
 
-    .links.active{
-        margin-left: -16%;
-        margin-top: 2.5%;
-        transition: all .3s ease-in-out;
-        display: flex;
+    .nav-item{
+        margin: 0 1.4rem;
     }
 
-    .hamburger.active {
-        top: 8.5%;
+    .nav-menu.active{
+        left: 0;
     }
 
-    .scroll div .bar{
-        background-color: rgba(0, 0, 0, 0.722);
+    .scroll .nav-menu{
+        background-color: rgba(219, 219, 219, 0.55);
     }
-
+    
 }
-
-/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
-
-@media screen and (max-width: 600px){
-    .links.active{
-        margin-left: -28.5%;
-        margin-top: 2.9%;
-        transition: all .3s ease-in-out;
-        display: flex;
-    }
-}
-
-/*============== Media Query for Mobile Devices ============== */
-@media (max-width: 480px) {
-    .links{
-      margin-left: -1000%;
-    }
-
-    .links.active{
-        margin-left: -35%;
-        margin-top: 5%;
-      }
-
-  }

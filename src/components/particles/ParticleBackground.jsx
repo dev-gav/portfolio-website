@@ -3,6 +3,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import './particlebackground.css'
 
+
 function ParticleBackground() {
     const particlesInit = useCallback(async (engine) => {
         console.log(engine);
@@ -65,7 +66,7 @@ function ParticleBackground() {
             }
           },
           color:{
-            value: '#636e72'
+            value: '#8B939E'
           },
           shape:{
             type: 'circle',
