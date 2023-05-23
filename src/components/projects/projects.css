@@ -41,6 +41,14 @@
   font-weight: 500;
 }
 
+.project h4{
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+  max-width: fit-content;
+  padding-bottom: 2px;
+}
+
 .project p{
     font-weight: 200;
     padding-bottom: 5px;
