@@ -12,7 +12,7 @@
 }
 
 .projects {
-    width: 70%;
+    width: 80%;
     padding: 3em;
     display: grid;
     grid-gap: 2em;
@@ -58,6 +58,17 @@
 .project .btn {
   margin-top: auto;
   align-self: flex-start;
+}
+
+.lim-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.btn.lim{
+  padding: .5rem 1rem;
+  margin-top: 5px;
 }
 
 /* ====== BUTTON ====== */
@@ -113,6 +124,14 @@
       color: rgba(0, 0, 0, 0.65);
       transform: translateY(0);
   }
+
+  /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+
+@media screen and (max-width: 1024px){
+  .projects {
+    width: 90%;
+  }
+}
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
 

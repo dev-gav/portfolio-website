@@ -18,6 +18,15 @@ const Projects = () => {
         </div>
 
         <div className='project'>
+          <h3>Learning In Motion Websites</h3>
+          <p>Developed engaging preschool websites with ReactJS for Learning In Motion, showcasing information about the daycares.</p>
+          <div className='lim-container'>
+            <a href='https://limpreschool.com/' className='btn lim'><BsGlobe size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> LIM Preschool</a>
+            <a href='https://limacademy.com/' className='btn lim'><BsGlobe size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> LIM Academy</a>
+          </div>
+        </div>
+
+        <div className='project'>
           <h3>Portfolio Website</h3>
           <p>Built a personal portfolio website using ReactJS and tsParticles to showcase my web presence, projects, and skills in a visually appealing format.</p>
           <a href='https://github.com/dev-gav/Portfolio-Website' className='btn'><AiFillGithub size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> Repository</a>
@@ -35,12 +44,6 @@ const Projects = () => {
           <p>Created a college social event management website using a LAMP stack for my  2022 Database Systems term project.</p>
           <a href='https://github.com/dev-gav/Shomi' className='btn'><AiFillGithub size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> Repository</a>
         </div>
-
-        {/* <div className='project'>
-          <h3>Dead Ringer</h3>
-          <p>Developed a web based application using a MERN stack that automatically sends pre-written emails to selected recipients if the user does not check in before the amounted time ends. </p>
-          <a href='https://github.com/dev-gav/Dead-Ringer' className='btn'><AiFillGithub size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> Repo</a>
-        </div> */}
 
       </div>
     </div>
