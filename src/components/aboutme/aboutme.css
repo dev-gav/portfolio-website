@@ -55,10 +55,11 @@
 
 @media screen and (max-width: 600px){
     .me {
-        display: none;
-        /* Maybe change to small and on top of about me */
+        display:block;
+        height: 150px;
+        float:none;
+        margin: auto;
     }
-
     .aboutme h1 {
         font-size: 40px;
     }
