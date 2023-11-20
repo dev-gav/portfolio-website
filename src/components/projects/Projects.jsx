@@ -14,7 +14,7 @@ const Projects = () => {
       <div className='project'>
           <h3>Dungeon Divers</h3>
           <p>Independently designed and developed a fast-paced 2D platformer game in Unity using C# for iOS devices.</p>
-          <a href='https://www.apple.com/app-store/' className='btn'><DiApple size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> App Store</a>
+          <a href='https://apps.apple.com/us/app/dungeon-divers/id6472009178' className='btn'><DiApple size={20} style={{display: "-ms-flexbox", verticalAlign: "bottom"}}/> App Store</a>
         </div>
 
         <div className='project'>
